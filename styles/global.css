@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@300;400;600;800&display=swap");
+
+/* 
+    Método de Reinicio: Dimensionamiento de caja universal con herencia.
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Glory", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: linear-gradient(0deg, #0e3c55, #237587);
+  border-radius: 0 0 15px 15px;
+  border-bottom: 6px solid #5efbfb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img--css3 {
+  height: 60px;
+}
+
+.img--flexbox {
+  height: 37px;
+}
+
+/* Propiedades del padre (flexbox) ==> display: flex | inline-flex */
+
+.master-1 {
+  color: #1b1b1b;
+  max-width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(rgba(156, 39, 176, 0.2), #fff);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Propiedades del padre (flexbox) ==> flex-direction: row | row-reverse | column | column-reverse */
+
+.master-1 > h1 {
+  margin: 30px 0 10px 0;
+  padding: 0;
+}
+
+.master-1 > h2 {
+  border-bottom: 6px solid #0e3c55;
+  padding: 10px 80px;
+}
+
+/* Dando formato al parrafo de descripción de las propiedades del padre en Flexbox. */
+
+.parrafo-2 {
+  text-align: center;
+  margin: 20px 40px;
+}
+
+/* Padre-1 con propiedad inicial (display: flex) */
+
+.padre-1 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+}
+
+/* Padre-2 con propiedad inicial (display:inline-flex) */
+
+.padre-2 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+/* Padre-3 con propiedad inicial (display:flex) |  flex-direction: row */
+
+.padre-3 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Padre-4 con propiedad inicial (display:flex) | flex-direction: row-reverse */
+
+.padre-4 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Padre-5 con propiedad inicial (display:flex) | flex-direction: column */
+
+.padre-5 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Padre-6 con propiedad inicial (display:flex) | flex-direction: column-reverse */
+
+.padre-6 {
+  background: #8954a1;
+  border: 2px solid #7b4a91;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.padre__hijo {
+  background: #f7941f;
+  border: 2px solid #f89c2f;
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+
+/* Destacado-1 con propiedad inicial (display: flex) */
+
+.destacado-1 {
+  border-radius: 5px 5px 0 0;
+  background-color: #f7941f;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.destacado-1:hover {
+  background: #8954a1;
+  border-bottom: 4px solid #8954a1;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Destacado-2 con propiedad inicial (display: inline-flex) */
+
+.destacado-2 {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f7941f;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.destacado-2:hover {
+  background: #8954a1;
+  border-bottom: 4px solid #8954a1;
+  color: #fff;
+  padding: 10px 20px;
+}
