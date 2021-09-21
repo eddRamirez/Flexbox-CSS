@@ -35,13 +35,23 @@ Referencia: https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminolo
 # Nota Extra: Incrustando imagenes al README.md
 
 Método 1:
-![Alt text](/img/dev.svg?raw=true "Optional title")
+
+<pre>
+  <code class="GitHub">
+    ![Alt text](/img/dev.svg?raw=true "Optional title")
+  </code>
+</pre>
 
 Método 2:
 
-  <p align="center">
-    <img src="/img/dev.svg" width="100" title="Hover text" alt="Optional text">
-  </p>
+<pre>
+  <code class="language-HTML">
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;p</span> <span style="color: #0000CC">align=</span><span style="background-color: #fff0f0">&quot;center&quot;</span><span style="color: #007700">&gt;</span>
+   <span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;/img/dev.svg&quot;</span> <span style="color: #0000CC">width=</span><span style="background-color: #fff0f0">&quot;100&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;Hover text&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;Optional text&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;/p&gt;</span>
+</pre></div>
+  </code>
+</pre>
 
 # Flexbox propiedades para el "Padre"
 
